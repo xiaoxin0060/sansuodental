@@ -3,31 +3,302 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="扣子编程，你的 AI 开发伙伴已就位" />
-    <title>扣子编程 - AI 开发伙伴</title>
+    <meta name="description" content="三索齿科 - 专业口腔医疗服务，提供龋病治疗、根管治疗、牙齿矫正、种植牙等全方位口腔健康解决方案" />
+    <meta name="keywords" content="牙科诊所，口腔医疗，牙齿矫正，种植牙，根管治疗，霍州牙科" />
+    <title>三索齿科 - 专业口腔医疗服务</title>
     <link rel="stylesheet" href="/styles/main.css" />
   </head>
   <body>
-    <div id="app">
-      <main class="main-wrapper">
-        <div class="content-container">
-          <img
-            src="https://lf-coze-web-cdn.coze.cn/obj/eden-cn/lm-lgvj/ljhwZthlaukjlkulzlp/coze-coding/icon/coze-coding.gif"
-            alt="扣子编程 Logo"
-            class="logo-image"
-          />
-          <div>
-            <div class="text-container">
-              <h1 class="heading">
-                应用开发中
-              </h1>
-              <p class="description">
-                请稍后，页面即将呈现
-              </p>
-            </div>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C10.5 2 9.2 2.8 8.5 4C7.8 5.2 7.5 6.5 7.5 8C7.5 9.5 8 11 9 12.5C10 14 11 15.5 11.5 17C12 18.5 12 20 12 22C12 20 12 18.5 12.5 17C13 15.5 14 14 15 12.5C16 11 16.5 9.5 16.5 8C16.5 6.5 16.2 5.2 15.5 4C14.8 2.8 13.5 2 12 2Z" fill="#d4382c"/>
+            <path d="M12 6C11.5 6 11 6.3 10.7 6.7C10.4 7.1 10.3 7.6 10.3 8C10.3 8.4 10.4 8.9 10.7 9.3C11 9.7 11.5 10 12 10C12.5 10 13 9.7 13.3 9.3C13.6 8.9 13.7 8.4 13.7 8C13.7 7.6 13.6 7.1 13.3 6.7C13 6.3 12.5 6 12 6Z" fill="white"/>
+          </svg>
+          三索齿科
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">首页</a></li>
+          <li><a href="#services">服务项目</a></li>
+          <li><a href="#doctor">医生介绍</a></li>
+          <li><a href="#contact">联系我们</a></li>
+        </ul>
+        <a href="tel:13994027312" class="nav-phone">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          13994027312
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero 区域 -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-logo">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C10.5 2 9.2 2.8 8.5 4C7.8 5.2 7.5 6.5 7.5 8C7.5 9.5 8 11 9 12.5C10 14 11 15.5 11.5 17C12 18.5 12 20 12 22C12 20 12 18.5 12.5 17C13 15.5 14 14 15 12.5C16 11 16.5 9.5 16.5 8C16.5 6.5 16.2 5.2 15.5 4C14.8 2.8 13.5 2 12 2Z" fill="#d4382c"/>
+            <path d="M12 6C11.5 6 11 6.3 10.7 6.7C10.4 7.1 10.3 7.6 10.3 8C10.3 8.4 10.4 8.9 10.7 9.3C11 9.7 11.5 10 12 10C12.5 10 13 9.7 13.3 9.3C13.6 8.9 13.7 8.4 13.7 8C13.7 7.6 13.6 7.1 13.3 6.7C13 6.3 12.5 6 12 6Z" fill="white"/>
+          </svg>
+        </div>
+        <h1>三索齿科</h1>
+        <p class="hero-tagline">专业口腔医疗 · 守护您的微笑</p>
+        <a href="tel:13994027312" class="hero-phone">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          13994027312
+        </a>
+        <div class="hero-info">
+          <div class="hero-info-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            霍州市开元街开元盛世对面法院西50米
+          </div>
+          <div class="hero-info-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            营业时间：8:00 - 20:00
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+    </section>
+
+    <!-- 服务项目 -->
+    <section class="section services" id="services">
+      <div class="section-container">
+        <div class="section-header">
+          <h2>服务项目</h2>
+          <div class="section-divider"></div>
+          <p>提供全方位口腔医疗服务，守护您的口腔健康</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C10.5 2 9.2 2.8 8.5 4C7.8 5.2 7.5 6.5 7.5 8C7.5 9.5 8 11 9 12.5C10 14 11 15.5 11.5 17C12 18.5 12 20 12 22C12 20 12 18.5 12.5 17C13 15.5 14 14 15 12.5C16 11 16.5 9.5 16.5 8C16.5 6.5 16.2 5.2 15.5 4C14.8 2.8 13.5 2 12 2Z"/>
+              </svg>
+            </div>
+            <h3>病预防及治疗</h3>
+            <p>早期、中期、晚期龋齿的专业诊断与治疗，采用先进材料和技术，有效阻止龋病发展</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+              </svg>
+            </div>
+            <h3>复杂根管治疗</h3>
+            <p>针对复杂牙根管的精细治疗，使用显微根管技术，彻底清除感染，保留天然牙齿</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <h3>牙周病治疗</h3>
+            <p>牙周翻瓣手术等专业治疗，有效控制牙周炎症，防止牙齿松动脱落</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                <line x1="3" y1="9" x2="21" y2="9"/>
+                <line x1="9" y1="21" x2="9" y2="9"/>
+              </svg>
+            </div>
+            <h3>烤瓷牙 / 全瓷牙</h3>
+            <p>高品质烤瓷牙和全瓷修复，美观耐用，恢复牙齿功能和美观</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3>贴面 / 嵌体</h3>
+            <p>微创美学修复，改善牙齿颜色、形态，恢复牙齿完整功能</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+            </div>
+            <h3>复杂智齿拔除</h3>
+            <p>各类复杂阻生智齿的安全拔除，微创操作，术后恢复快</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 20h9"/>
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+              </svg>
+            </div>
+            <h3>金属托槽矫正</h3>
+            <p>传统金属托槽牙齿矫正，技术成熟，效果稳定，适合各类错颌畸形</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+            <h3>隐形无托槽矫正</h3>
+            <p>透明隐形矫正器，美观舒适，可摘戴，适合对美观要求高的患者</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <h3>儿童早期矫正</h3>
+            <p>儿童错颌畸形早期干预，把握最佳治疗时机，引导孩子颌面正常发育</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 医生介绍 -->
+    <section class="section doctor" id="doctor">
+      <div class="section-container">
+        <div class="section-header">
+          <h2>医生介绍</h2>
+          <div class="section-divider"></div>
+          <p>专业医师团队，为您提供优质医疗服务</p>
+        </div>
+        <div class="doctor-card">
+          <div class="doctor-avatar">
+            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div class="doctor-info">
+            <h3>贺三锁</h3>
+            <span class="doctor-title">主治医师</span>
+            <p class="doctor-desc">
+              毕业于山西医科大学，拥有多年口腔临床诊疗经验。每年外出学习数次，紧跟口腔医学前沿理论与技术，致力于为患者提供专业、舒适的口腔医疗服务。
+            </p>
+            <ul class="doctor-credentials">
+              <li>毕业于山西医科大学口腔专业</li>
+              <li>进修于山西省人民医院口腔科 3 年</li>
+              <li>持续学习口腔前沿理论与技术</li>
+              <li>擅长各类口腔常见病及复杂病例诊治</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section class="section contact" id="contact">
+      <div class="section-container">
+        <div class="section-header">
+          <h2>联系我们</h2>
+          <div class="section-divider"></div>
+          <p>欢迎预约咨询，我们将竭诚为您服务</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <h3>预约电话</h3>
+            <p><a href="tel:13994027312">13994027312</a></p>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem;">点击即可拨打</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <h3>诊所地址</h3>
+            <p>霍州市开元街<br/>开元盛世对面法院西50米</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3>营业时间</h3>
+            <p>每天 8:00 - 20:00</p>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem;">全年无休</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#home">首页</a>
+          <a href="#services">服务项目</a>
+          <a href="#doctor">医生介绍</a>
+          <a href="#contact">联系我们</a>
+        </div>
+        <p class="footer-copyright">
+          © 2024 三索齿科 版权所有 | 专业口腔医疗服务
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // 移动端菜单切换
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+      
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+      
+      // 点击导航链接后关闭菜单
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+        });
+      });
+      
+      // 滚动时导航栏效果
+      let lastScroll = 0;
+      window.addEventListener('scroll', () => {
+        const navbar = document.querySelector('.navbar');
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll > 100) {
+          navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+        } else {
+          navbar.style.boxShadow = '0 2px 4px rgba(0,0,0,0.05)';
+        }
+        
+        lastScroll = currentScroll;
+      });
+    </script>
   </body>
 </html>
