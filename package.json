@@ -1,0 +1,13 @@
+{
+  "name": "三索齿科官网",
+  "version": "1.0.0",
+  "description": "三索齿科官方网站",
+  "scripts": {
+    "dev": "python -m http.server 5000 --bind 0.0.0.0",
+    "build": "echo 'Static site, no build needed'",
+    "start": "python -m http.server 5000 --bind 0.0.0.0"
+  },
+  "keywords": ["牙科", "口腔", "诊所"],
+  "author": "三索齿科",
+  "license": "MIT"
+}
